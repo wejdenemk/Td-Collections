@@ -1,0 +1,27 @@
+package ex1;
+
+import java.util.ArrayList;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Compte C1 = new Compte(1,1.22);
+		Compte C2 = new Compte(2,2.65);
+		Compte C3 = new Compte(3,9.32);
+		Compte C4 = new Compte(4,0.21);
+		Compte C5 = new Compte(5,5.1);
+		
+		ArrayList<Compte> list = new ArrayList<>();
+		list.add(C1);
+		list.add(C2);
+		
+		Banque CBanque = new Banque("compte1",list);
+		
+		CBanque.affiche();
+		
+		CBanque.creerCompte(6,5.1);
+		
+		
+	}
+}

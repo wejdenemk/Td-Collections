@@ -1,0 +1,19 @@
+package ex1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class SoldeComparator implements Comparable<Compte>{
+
+	public int compareTo(ArrayList<Compte> Compte) {
+		System.out.println(Collections.sort(Compte));
+		return 0;
+	}
+
+	@Override
+	public int compareTo(Compte o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

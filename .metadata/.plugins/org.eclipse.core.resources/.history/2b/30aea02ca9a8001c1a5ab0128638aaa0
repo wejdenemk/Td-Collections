@@ -1,0 +1,46 @@
+package ex1;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Compte C1 = new Compte(1,1.22);
+		Compte C2 = new Compte(2,2.65);
+		
+		Compte C4 = new Compte(4,0.21);
+		Compte C5 = new Compte(5,5.1);
+		
+		ArrayList<Compte> list = new ArrayList<>();
+		list.add(C1);
+		list.add(C2);
+		
+		Banque CBanque = new Banque("compteB1",list);
+		
+		CBanque.affiche();
+		System.out.print("\n");
+		CBanque.creerCompte(3,5.1);
+		CBanque.affiche();
+		
+		System.out.print("\n");
+		System.out.print("\n");
+		
+		HashSet<Compte> listH = new HashSet<>();
+		listH.add(C4);
+		listH.add(C5);
+		
+		Titulaire Titul = new Titulaire("compteT1",listH);
+		Titul.afficher();
+		System.out.print("\n");
+		Titul.ajoutCompte(7,5.68);
+		Titul.afficher();
+		System.out.print("\n");
+		Titul.ret(4,0.21);
+		Titul.afficher();
+		System.out.print("\n");
+		Titul.dep(4,3.5);
+		Titul.afficher();
+	}
+}

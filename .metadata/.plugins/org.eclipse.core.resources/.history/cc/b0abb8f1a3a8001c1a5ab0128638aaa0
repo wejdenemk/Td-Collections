@@ -1,0 +1,13 @@
+package ex1;
+
+import java.util.Collections;
+
+public class SoldeComparator implements Comparable<Compte>{
+
+	@Override
+	public int compareTo(Compte o) {
+		System.out.print(Collections.sort();
+		return 0;
+	}
+
+}
